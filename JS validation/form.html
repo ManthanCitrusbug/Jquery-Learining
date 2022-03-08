@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="js/validate.js"></script>
-    <script defer src="js/jquery.js"></script>
+    <!-- <script defer src="js/validate.js"></script> -->
+    <script src="js/jquery.js"></script>
+    <script defer src="js/jq.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
@@ -23,7 +24,7 @@
             </div><br>
             <div class="label_name">
                 <label for="">Age :</label><br><br>
-                <input type="text" id="age" autocomplete="off" class="input_area" placeholder="Age" tabindex="2" autofocus ><br>
+                <input type="number" id="age" autocomplete="off" class="input_area" placeholder="Age" tabindex="2" autofocus min="1" max="99"/><br>
                 <!-- <span id="error_form" class="error"></span> -->
                 <span id="error_age" class="error"></span>
                 
@@ -57,7 +58,7 @@
                 
             </div><br>
             <div class="label_name">
-                <input type="submit" class="submit" value="Submit">
+                <input type="submit" class="submit" value="Submit" id="form_submit">
             </div>
         </form>
     </div>
